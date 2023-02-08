@@ -25,7 +25,7 @@ class MyClient(discord.Client):
         #     bot_response = chatgpt_response(prompt = message.content)
         #     await message.channel.send(f"Answer: {bot_response}")
         bot_response = chatgpt_response(prompt=message.content)
-        await message.channel.send(f"Answer: {bot_response}")
+        await message.channel.send(f"{bot_response}")
 
 
 intents = discord.Intents.default()
